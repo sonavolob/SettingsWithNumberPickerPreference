@@ -26,7 +26,7 @@ public class NumberPickerPreference extends DialogPreference {
     private NumberPicker picker;
     private int value;
 
-    public NumberPickerPreferencer(Context context, AttributeSet attrs) {
+    public NumberPickerPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         loadStateFromAttrs(attrs);
     }

@@ -1,4 +1,6 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--xmlns:app="http://schemas.android.com/apk/lib/com.example.settingswithnumberpickerpreference"-->
 
     <SwitchPreference
         android:defaultValue="true"
@@ -29,5 +31,13 @@
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
         android:title="@string/pref_title_add_friends_to_messages"/>
+
+
+    <com.example.settingswithnumberpickerpreference.NumberPickerPreference
+        android:key="pref_key_testing_number_of_words"
+        android:title="@string/pref_testing_title_days"
+        android:persistent="true"
+        app:charInputMinimum="1"
+        android:defaultValue="10" />
 
 </PreferenceScreen>
